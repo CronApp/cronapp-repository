@@ -46,7 +46,7 @@ export default {
       method: request.method,
       headers,
       body: hasBody ? request.body : undefined,
-      redirect: "manual",
+      redirect: "manual"
     });
 
     const responseHeaders = new Headers(upstreamResponse.headers);
@@ -57,7 +57,7 @@ export default {
     return new Response(upstreamResponse.body, {
       status: upstreamResponse.status,
       statusText: upstreamResponse.statusText,
-      headers: responseHeaders,
+      headers: responseHeaders
     });
   },
 };
