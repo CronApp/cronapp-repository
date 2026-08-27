@@ -6,7 +6,7 @@ const HOP_BY_HOP_HEADERS = new Set([
   "te",
   "trailers",
   "transfer-encoding",
-  "upgrade",
+  "upgrade"
 ]);
 
 function buildUpstreamUrl(requestUrl, env) {
